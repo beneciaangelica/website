@@ -140,3 +140,67 @@ footer a {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.resume-section {
+  display: flex;
+  justify-content: center;     /* centers the group horizontally */
+  align-items: center;         /* centers vertically if there's space */
+  gap: 40px;                   /* space between the two cards */
+  margin-top: 60px;
+  flex-wrap: wrap;   
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.resume-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  text-align: left;
+}
+
+.resume-card h2 {
+  margin-bottom: 10px;
+}
+
+.resume-card p {
+  font-size: 0.95em;
+  margin-bottom: 16px;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pastel-blue {
+  background-color: #e3f1f8;
+  color: #1b4e6d;
+}
+
+.pastel-yellow {
+  background-color: #fff7d6;
+  color: #6d5a1b;
+}

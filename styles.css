@@ -151,14 +151,19 @@ footer a {
 }
 
 .back-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 20px;
+  display: block;
+  text-align: center;
+  margin: 30px auto 10px auto;
+  font-size: 0.95em;
   text-decoration: none;
   color: #666;
-  font-size: 0.95em;
+  transition: color 0.2s;
 }
+
+.back-link:hover {
+  color: #000;
+}
+
 
 .resume-title {
   width: 100%;
@@ -217,4 +222,61 @@ footer a {
 .pastel-yellow {
   background-color: #fff7d6;
   color: #6d5a1b;
+}
+
+.research-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  font-family: Helvetica, sans-serif;
+}
+
+.research-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 170px;
+  padding: 0 40px;
+  position: relative;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordion-header {
+  background-color: #f1f1f1;
+  color: #333;
+  cursor: pointer;
+  padding: 18px 24px;
+  border-radius: 12px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.3s ease;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-header:hover {
+  background-color: #e8f0fe;
+}
+
+.accordion-content {
+  background-color: #fff;
+  border-radius: 0 0 12px 12px;
+  padding: 16px 24px;
+  display: none;
+  font-size: 0.95em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }

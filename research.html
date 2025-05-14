@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const isOpen = content.style.display === 'block';
+
+        // Close all sections
+        document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
+
+        // Open clicked one
+        if (!isOpen) {
+          content.style.display = 'block';
+        }
+      });
+    });
+  });
+</script>
+
+<body>
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+   <header class="research-header">
+      <h1 class="section-title">Research Projects</h1>
+</header>
+
+    <div class="accordion">
+      <button class="accordion-header">🔬 IL-18BP Cytokine Project</button>
+      <div class="accordion-content">
+        <p>This project explores the role of IL-18 binding protein in modulating inflammatory responses. I cloned and overexpressed IL-18BP in E. coli and am optimizing purification for functional studies.</p>
+      </div>
+
+      <button class="accordion-header">🧫 OMK Cell Suspension Study</button>
+      <div class="accordion-content">
+        <p>I investigated whether owl monkey kidney (OMK) cells could be adapted to suspension culture. Though the attempt failed, it helped me better understand adhesion mechanisms and troubleshooting experimental conditions.</p>
+      </div>
+
+      <button class="accordion-header">🌿 Kalsec R&D Internship</button>
+      <div class="accordion-content">
+        <p>During my time at Kalsec, I worked on natural product stability and antioxidant testing using Oxidative Stability Index (OSI) assays. I also contributed to flavor compound research in the R&D lab.</p>
+      </div>
+    </div>
+  </div>

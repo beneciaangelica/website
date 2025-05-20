@@ -6,48 +6,43 @@
   <title>Research Projects</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const headers = document.querySelectorAll('.accordion-header');
-    headers.forEach(header => {
-      header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        const isOpen = content.style.display === 'block';
-
-        // Close all sections
-        document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
-
-        // Open clicked one
-        if (!isOpen) {
-          content.style.display = 'block';
-        }
-      });
-    });
-  });
-</script>
-
 <body>
-  <a href="index.html" class="back-link">← Back to Home</a>
+  <main class="research-container">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <h1 class="research-title">Research Projects</h1>
+    <p class="research-subtitle">A curated collection of research I've contributed to as a biology graduate student.</p>
 
-   <header class="research-header">
-      <h1 class="section-title">Research Projects</h1>
-</header>
-
-    <div class="accordion">
-      <button class="accordion-header">🔬 IL-18BP Cytokine Project</button>
-      <div class="accordion-content">
-        <p>This project explores the role of IL-18 binding protein in modulating inflammatory responses. I cloned and overexpressed IL-18BP in E. coli and am optimizing purification for functional studies.</p>
+    <section class="research-grid">
+      <div class="research-item">
+        <a href="il18bp.html" class="research-image-link">
+          <img src="images/IL-18BP.png" alt="IL-18BP Project" class="research-image" />
+        </a>
+        <div class="research-text">
+          <h2>🔬 IL-18BP Cytokine Project (ongoing)</h2>
+          <p>Investigating the role of IL-18 binding protein in inflammation regulation, using cytokine profiling in vitro.</p>
+        </div>
       </div>
 
-      <button class="accordion-header">🧫 OMK Cell Suspension Study</button>
-      <div class="accordion-content">
-        <p>I investigated whether owl monkey kidney (OMK) cells could be adapted to suspension culture. Though the attempt failed, it helped me better understand adhesion mechanisms and troubleshooting experimental conditions.</p>
+      <div class="research-item">
+        <a href="omk.html" class="research-image-link">
+          <img src="images/OMK.png" alt="OMK Study" class="research-image" />
+        </a>
+        <div class="research-text">
+          <h2>🧫 OMK Cell Suspension Study</h2>
+          <p>Evaluating owl monkey kidney cell viability between monolayer vs suspension culture conditions.</p>
+        </div>
       </div>
 
-      <button class="accordion-header">🌿 Kalsec R&D Internship</button>
-      <div class="accordion-content">
-        <p>During my time at Kalsec, I worked on natural product stability and antioxidant testing using Oxidative Stability Index (OSI) assays. I also contributed to flavor compound research in the R&D lab.</p>
+      <div class="research-item">
+        <a href="kalsec.html" class="research-image-link">
+          <img src="images/kalsec1.png" alt="Kalsec Internship" class="research-image" />
+        </a>
+        <div class="research-text">
+          <h2>🌿 Kalsec R&D Internship</h2>
+          <p>Worked on antioxidant optimization using OSI methods, and assisted in flavor profiling in a wet lab environment.</p>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
+</body>
+</html>

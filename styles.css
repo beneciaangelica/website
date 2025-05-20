@@ -86,42 +86,6 @@ nav a {
   color: #333;
 }
 
-.button-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.pastel-btn {
-  padding: 12px 24px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-  transition: background 0.3s ease;
-}
-
-.green {
-  background-color: #e6f4ea;
-  color: #2f5d38;
-}
-
-.blue {
-  background-color: #e3f1f8;
-  color: #1b4e6d;
-}
-
-.yellow {
-  background-color: #fff7d6;
-  color: #6d5a1b;
-}
-
-.pink {
-  background-color: #fde2e4;
-  color: #8c1c2c;
-}
-
 footer {
   text-align: center;
   margin-top: 20px;
@@ -143,11 +107,9 @@ footer a {
 
 .resume-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 170px;
-  padding: 0 40px;
-  position: relative;
+  justify-content: center; /* center the text horizontally */
+  margin-bottom: 30px;
+  padding: 0;
 }
 
 .back-link {
@@ -169,7 +131,8 @@ footer a {
   width: 100%;
   text-align: center;
   font-size: 2em;
-  margin-top: 50px;
+  margin-top: 0px; /* reduce space */
+  margin-bottom: 20px; /* optional: add breathing room */
 }
 
 .resume-section {

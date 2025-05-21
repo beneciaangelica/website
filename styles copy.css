@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.name-block .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #6bc5c9;
+  border-radius: 50%;
+}
+
+.name-block h1 {
+  font-size: 1.8em;
+}
+
+.subtitle {
+  font-size: 1em;
+  color: #666;
+  margin-left: 10px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 30px;
+}
+
+.profile-img img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+  max-width: 500px;
+  text-align: left;
+}
+
+.about-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  font-size: 1em;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: center; /* center the text horizontally */
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin: 30px auto 10px auto;
+  font-size: 0.95em;
+  text-decoration: none;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #000;
+}
+
+
+.resume-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0px; /* reduce space */
+  margin-bottom: 20px; /* optional: add breathing room */
+}
+
+.resume-section {
+  display: flex;
+  justify-content: center;     /* centers the group horizontally */
+  align-items: center;         /* centers vertically if there's space */
+  gap: 40px;                   /* space between the two cards */
+  margin-top: 60px;
+  flex-wrap: wrap;   
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+.resume-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  text-align: left;
+  min-height: 200px;
+}
+
+.resume-card h2 {
+  margin-bottom: 10px;
+}
+
+.resume-card p {
+  font-size: 0.95em;
+  margin-bottom: 16px;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pastel-blue {
+  background-color: #e3f1f8;
+  color: #1b4e6d;
+}
+
+.pastel-yellow {
+  background-color: #fff7d6;
+  color: #6d5a1b;
+}
+
+.research-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.research-title {
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.research-subtitle {
+  text-align: center;
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 2.5em;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.research-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.research-image-link {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: 300px; /* Fixed height */
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.research-image-link:hover {
+  transform: translateY(-4px);
+}
+
+.research-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.research-text {
+  text-align: left;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+}
+
+.research-text h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+
+.research-text p {
+  font-size: 0.95em;
+  color: #444;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}

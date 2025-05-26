@@ -88,7 +88,8 @@ nav a {
 
 footer {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
+  padding: 20px;
   font-size: 0.9em;
   color: #666;
 }

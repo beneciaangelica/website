@@ -142,16 +142,17 @@ footer a {
   display: block;
   width: 100%;
   max-width: 500px;
-  height: 300px; /* Fixed height */
+  height: 300px;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #ccc;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); /* <-- persistent shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .research-image-link:hover {
   transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18); /* slightly deeper on hover */
 }
 
 .research-image {

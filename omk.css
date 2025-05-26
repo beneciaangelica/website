@@ -14,13 +14,13 @@ body {
     line-height: 1.6;
 }
 
-.il18bp-container {
+.omk-container {
   max-width: 960px;
   margin: 0 auto;
   padding: 0px;
 }
 
-.il18bp-title {
+.omk-title {
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 30px;
@@ -30,13 +30,14 @@ body {
 .project-image {
     width: 100%;
     max-width: 700px;
+    height: 500px;
     border-radius: 20px;
     display: block;
     margin: 0 auto 40px auto;
     box-shadow: 0 8px 18px rgba(0,0,0,0.1);
 }
 
-.il18bp-description {
+.omk-description {
     text-align: justify;
     font-size: 1.05em;
     padding: 0 20px;

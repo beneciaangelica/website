@@ -104,3 +104,19 @@ footer a {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.social-icons {
+  margin-top: 12px;
+  display: flex;
+  gap: 14px;
+}
+
+.social-icon {
+  width: 26px;
+  height: 26px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+}

@@ -126,68 +126,6 @@ footer a {
   margin-bottom: 2.5em;
 }
 
-.marketing-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.marketing-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.marketing-image-link {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #ccc;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12); /* <-- persistent shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.marketing-image-link:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18); /* slightly deeper on hover */
-}
-
-.marketing-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}
-
-.marketing-text {
-  text-align: left;
-  margin-top: 1rem;
-  padding: 0 0.5rem;
-}
-
-.marketing-text h2 {
-  font-size: 1.25em;
-  font-weight: bold;
-  margin: 0 0 0.5rem;
-}
-
-.marketing-text p {
-  font-size: 0.95em;
-  color: #444;
-  margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .marketing-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
 .highlight-section {
   display: flex;
   flex-direction: column;
@@ -197,13 +135,14 @@ footer a {
 .highlight {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
-  flex-wrap: wrap;
+  margin-bottom: -30px; /* pull the next item up */
+  flex-wrap: wrap; /* handles mobile nicely */
 }
 
 .highlight.reverse {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; /* right-left image-text flip */
 }
 
 .media-frame {
@@ -215,6 +154,26 @@ footer a {
   background-color: #000;
 }
 
+.media-frame-iscgrowth {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  background-color: #000;
+}
+
+.media-frame-indokemika {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  background-color: #000;
+}
+
 .iphone-media {
   width: 100%;
   height: 100%;
@@ -223,27 +182,40 @@ footer a {
   display: block;
 }
 
+.iscgrowth-img{
+    width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.indokemika-img{
+    width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
 .highlight-text {
-  flex: 1;
-  max-width: 600px;
+  max-width: 460px;
+  font-size: 1.1em;
+  line-height: 1.7em;
 }
 
 .highlight-text h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: bold;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.2em;
 }
 
 .highlight-text h3 {
-  font-size: 1em;
-  font-weight: 600;
-  margin-bottom: 0.8em;
-  color: #333;
+  font-size: 1.1em;
+  color: #222;
+  margin-bottom: 0.6em;
 }
 
 .highlight-text p {
-  font-size: 0.95em;
-  line-height: 1.6;
+  font-size: 1em;
   color: #444;
 }
 

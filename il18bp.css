@@ -88,3 +88,47 @@ footer a {
   color: #333;
   text-decoration: none;
 }
+
+.il18bp-skills {
+  text-align: left;
+  font-size: 1.05em;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.il18bp-skills h2 {
+  font-size: 1.4em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  color: #222;
+}
+
+.il18bp-skills ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 12px;
+  list-style: none;
+  padding-left: 0;
+  max-width: 700px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.il18bp-skills li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 1em;
+  color: #444;
+  text-align: left;
+}
+
+.il18bp-skills li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1.2;
+}

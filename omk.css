@@ -137,22 +137,3 @@ footer a:hover {
   font-size: 1.2em;
   line-height: 1.2;
 }
-
-@media screen and (max-width: 768px) {
-  .about-section,
-  .marketing-text,
-  .research-text {
-    text-align: left;
-    padding: 0 5vw;
-  }
-
-  .marketing-grid,
-  .research-grid {
-    grid-template-columns: 1fr; /* Stack items vertically */
-  }
-
-  .profile-img img {
-    width: 90%;
-    height: auto;
-  }
-}

@@ -265,3 +265,11 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+
+.omk-skills {
+  max-width: 800px;
+  margin: 60px auto 40px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+

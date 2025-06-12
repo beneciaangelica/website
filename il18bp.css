@@ -89,6 +89,10 @@ footer a {
   text-decoration: none;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
 .il18bp-skills {
   text-align: left;
   font-size: 1.05em;

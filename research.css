@@ -99,6 +99,10 @@ footer a {
   text-decoration: none;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
 .logo-icon {
   width: 35px;
   height: 35px;
@@ -155,6 +159,15 @@ footer a {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18); /* slightly deeper on hover */
 }
 
+.research-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.research-title-link:hover {
+  text-decoration: underline;
+}
+
 .research-image {
   width: 100%;
   height: auto;
@@ -181,7 +194,20 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
+  .about-section,
+  .marketing-text,
+  .research-text {
+    text-align: left;
+    padding: 0 5vw;
+  }
+
+  .marketing-grid,
   .research-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Stack items vertically */
+  }
+
+  .profile-img img {
+    width: 90%;
+    height: auto;
   }
 }

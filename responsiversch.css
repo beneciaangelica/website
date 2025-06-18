@@ -1,0 +1,58 @@
+/* === Responsive Styles for research.html === */
+
+@media screen and (max-width: 768px) {
+  .research-container {
+    padding: 20px 10px;
+  }
+
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .research-text {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .research-text h2 {
+    font-size: 1.1em;
+  }
+
+  .research-text p {
+    font-size: 0.95em;
+  }
+
+  .research-title {
+    font-size: 1.8em;
+  }
+
+  .research-subtitle {
+    font-size: 0.95em;
+    padding: 0 10px;
+  }
+
+  footer {
+    font-size: 0.75em;
+    padding: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .research-title {
+    font-size: 1.5em;
+  }
+
+  .research-subtitle {
+    font-size: 0.9em;
+  }
+
+  .research-image-link {
+    height: auto;
+  }
+
+  .research-image {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,58 +1,35 @@
-
-@media screen and (max-width: 1024px) {
-  .page-wrapper {
-    padding: 20px;
-  }
-
+@media screen and (max-width: 768px) {
   .main-content {
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
     text-align: center;
+    gap: 10px;
   }
 
   .profile-img img {
     width: 90%;
+    max-width: 300px;
     height: auto;
-    max-width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   }
 
   .about-section {
-    max-width: 100%;
-    text-align: center;
+    max-width: 90%;
     padding: 0 10px;
   }
 
-  .marketing-grid,
-  .research-grid {
-    grid-template-columns: 1fr !important;
-    gap: 24px;
-  }
-
-  .marketing-image-link,
-  .research-image-link {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-  }
-
-  .marketing-text,
-  .research-text {
+  footer {
+    font-size: 0.8em;
+    padding: 10px;
     text-align: center;
   }
-}
 
-@media screen and (max-width: 480px) {
-  .name-block h1 {
-    font-size: 1.4em;
-  }
-
-  nav a {
+  footer p:first-child {
     font-size: 0.9em;
-    margin-left: 10px;
   }
 
-  .marketing-title,
-  .research-title {
-    font-size: 1.5em;
+  .social-icons {
+    justify-content: center;
   }
 }

@@ -5,23 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Marketing Projects</title>
   <link rel="stylesheet" href="marketing1.css" />
-  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="responsivemkt.css" />
 </head>
 <body>
   <div class="page-wrapper">
-    <div class="header">
-      <div class="name-block">
-        <img src="images/logo.png" alt="Logo" class="logo-icon" />
-        <h1>Benecia Angelica</h1>
-        <p class="subtitle">Biology Grad Student</p>
-      </div>
-      <nav>
+    <header class="header">
+      <nav class="nav-center">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
-        <a href="marketing1.html">Marketing</a>
+        <a href="marketing1.html" class="active">Marketing</a>
         <a href="resume.html">Resume</a>
       </nav>
-    </div>
+    </header>
 
     <main class="marketing-container">
       <h1 class="marketing-title">Marketing Projects</h1>
@@ -42,18 +37,19 @@
         </div>
 
         <div class="highlight">
+          <div class="media-frame">
+            <video controls class="iphone-media" poster="images/IB_Cover.png">
+              <source src="videos/Bazaar.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          
           <div class="highlight-text">
             <h2>📍 International Bazaar 2025</h2>
             <h3>15 Days, 15 Reels</h3>
             <p>
               I led content strategy for this cultural showcase, working with my marketing team to post one reel every day for two weeks. Through collaboration and creativity, we reached over 1,500 attendees. It was my favorite blend of digital art and community.
             </p>
-          </div>
-          <div class="media-frame">
-            <video controls class="iphone-media" poster="images/IB_Cover.png">
-              <source src="videos/Bazaar.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
           </div>
         </div>
 
@@ -73,6 +69,7 @@
     </main>
 
     <footer>
+      <p><strong>Benecia Angelica</strong></p>
       <p>Email: <a href="mailto:benecia.angelica@gmail.com">benecia.angelica@gmail.com</a></p>
       <p>Phone: (619) 703-6827</p>
     </footer>

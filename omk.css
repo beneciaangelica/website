@@ -30,7 +30,7 @@ body {
 .project-image {
     width: 100%;
     max-width: 700px;
-    height: 500px;
+    height: auto;
     border-radius: 20px;
     display: block;
     margin: 0 auto 40px auto;

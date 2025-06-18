@@ -1,0 +1,58 @@
+@media screen and (max-width: 768px) {
+
+  .resume-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+  }
+
+  .resume-card {
+    width: 90%;
+    min-width: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .resume-card h2 {
+    font-size: 1.2em;
+  }
+
+  .resume-card p {
+    font-size: 0.95em;
+  }
+
+  .resume-title {
+    font-size: 1.5em;
+    padding: 0 10px;
+  }
+
+  footer {
+    font-size: 0.75em;
+    padding: 16px 8px;
+  }
+
+  .resume-button {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .resume-title {
+    font-size: 1.3em;
+  }
+
+  .resume-card {
+    padding: 18px;
+  }
+
+  .resume-button {
+    font-size: 0.85em;
+    padding: 10px 16px;
+  }
+
+  footer p {
+    margin-bottom: 4px;
+  }
+}
